@@ -8,7 +8,7 @@ import SocialLinks from "./SocialLinks";
 export default function Hero() {
   return (
     <section id="top" className="hero-glow relative flex min-h-screen items-center">
-      <div className="mx-auto grid w-full max-w-6xl items-center gap-12 px-6 pt-16 md:grid-cols-[1.4fr_1fr]">
+      <div className="mx-auto grid w-full max-w-6xl items-center gap-12 px-6 pb-12 pt-28 md:pb-0 md:pt-16 md:grid-cols-[1.4fr_1fr]">
         <motion.div
           initial={{ opacity: 0, y: 28 }}
           animate={{ opacity: 1, y: 0 }}
