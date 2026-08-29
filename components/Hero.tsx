@@ -40,7 +40,7 @@ export default function Hero() {
             </Link>
             <Link
               href="/#contact"
-              className="rounded-full border border-edge bg-surface px-6 py-3 text-sm font-semibold transition hover:border-accent"
+              className="w-full rounded-full border border-edge bg-surface px-6 py-3 text-center text-sm font-semibold transition hover:border-accent sm:w-auto"
             >
               Get in touch
             </Link>
