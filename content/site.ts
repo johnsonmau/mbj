@@ -284,7 +284,7 @@ export const resume = {
             "Design and implement new API endpoints and backend services in Java/Spring Boot supporting MyHealtheVet, the United States Department of Veterans Affairs' primary health portal for millions of Veterans.",
             "Drive technical design for backend features, authoring design documents and evaluating integration approaches to align solutions with VA healthcare compliance requirements before implementation.",
             "Led the design and rollout of Java and library upgrades across backend services, ensuring dependency compatibility, security patch compliance, and long-term maintainability.",
-            "Designed the Grafana metrics instrumentation strategy for backend services, improving observability and enabling data-driven performance monitoring in production.",
+            "Instrumented backend APIs with Grafana metrics, improving observability and enabling data-driven performance monitoring in production.",
             "Authored and expanded unit and integration test suites, improving code coverage and reducing regression risk across critical Veteran-facing workflows.",
             "Collaborate with cross-functional agile teams, including VA product owners and engineers, to design and deliver backend changes across a large-scale, federally regulated codebase.",
           ],
