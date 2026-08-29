@@ -14,6 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(identity.url),
+  alternates: { canonical: "/" },
   title: {
     default: `${identity.name} | ${identity.role}`,
     template: `%s | ${identity.name}`,
@@ -23,6 +25,8 @@ export const metadata: Metadata = {
     title: `${identity.name} | ${identity.role}`,
     description: identity.tagline,
     type: "website",
+    url: identity.url,
+    siteName: identity.domain,
   },
 };
 

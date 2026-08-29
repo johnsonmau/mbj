@@ -5,6 +5,8 @@
 export const identity = {
   name: "Maurice Johnson",
   firstName: "Maurice",
+  domain: "mbjohnsonjr.com",
+  url: "https://mbjohnsonjr.com",
   role: "Senior Software Engineer",
   tagline:
     "8+ years building scalable Java & Spring Boot systems, currently supporting a health portal used by millions of Veterans. I ship my own products, run a home lab, and make content about all of it.",

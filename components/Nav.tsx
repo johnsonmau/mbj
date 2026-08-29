@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { identity, nav } from "@/content/site";
+import { nav } from "@/content/site";
 import ThemeToggle from "./ThemeToggle";
 
 export default function Nav() {
@@ -12,8 +12,8 @@ export default function Nav() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-edge/60 bg-background/70 backdrop-blur-md">
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <Link href="/#top" className="font-mono text-sm font-semibold tracking-tight">
-          <span className="text-gradient">{identity.firstName.toLowerCase()}</span>
-          <span className="text-muted">.dev</span>
+          <span className="text-gradient">mbjohnsonjr</span>
+          <span className="text-muted">.com</span>
         </Link>
 
         <div className="hidden items-center gap-6 md:flex">
