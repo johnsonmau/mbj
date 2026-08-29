@@ -25,22 +25,22 @@ export default function Hero() {
             {identity.tagline}
           </p>
 
-          <div className="mt-8 flex flex-wrap items-center gap-4">
+          <div className="mt-8 flex items-center gap-2 sm:gap-4">
             <Link
               href="/#projects"
-              className="rounded-full bg-foreground px-6 py-3 text-sm font-semibold text-background transition hover:opacity-85"
+              className="whitespace-nowrap rounded-full bg-foreground px-3.5 py-3 text-xs font-semibold text-background transition hover:opacity-85 sm:px-6 sm:text-sm"
             >
               View my work
             </Link>
             <Link
               href="/#resume"
-              className="rounded-full border border-edge bg-surface px-6 py-3 text-sm font-semibold transition hover:border-accent"
+              className="whitespace-nowrap rounded-full border border-edge bg-surface px-3.5 py-3 text-xs font-semibold transition hover:border-accent sm:px-6 sm:text-sm"
             >
               My experience
             </Link>
             <Link
               href="/#contact"
-              className="w-full rounded-full border border-edge bg-surface px-6 py-3 text-center text-sm font-semibold transition hover:border-accent sm:w-auto"
+              className="whitespace-nowrap rounded-full border border-edge bg-surface px-3.5 py-3 text-xs font-semibold transition hover:border-accent sm:px-6 sm:text-sm"
             >
               Get in touch
             </Link>
