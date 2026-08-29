@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+/* Dark by default; light theme via data-theme="light" on <html>. */
+:root {
+  --background: #08080d;
+  --surface: #10101a;
+  --surface-2: #171724;
+  --foreground: #ededf2;
+  --muted: #9a9aad;
+  --edge: #23233a;
+  --accent: #22d3ee;
+  --accent-2: #a78bfa;
+}
+
+:root[data-theme="light"] {
+  --background: #fafafc;
+  --surface: #ffffff;
+  --surface-2: #f1f1f6;
+  --foreground: #14141c;
+  --muted: #5c5c70;
+  --edge: #e2e2ec;
+  --accent: #0891b2;
+  --accent-2: #7c3aed;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-edge: var(--edge);
+  --color-accent: var(--accent);
+  --color-accent-2: var(--accent-2);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 35%, transparent);
+}
+
+.text-gradient {
+  background: linear-gradient(100deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glow-card {
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+.glow-card:hover {
+  border-color: color-mix(in srgb, var(--accent) 55%, var(--edge));
+  box-shadow: 0 0 32px -8px color-mix(in srgb, var(--accent) 45%, transparent);
+  transform: translateY(-2px);
+}
+
+/* Soft radial glow behind the hero. */
+.hero-glow {
+  background:
+    radial-gradient(600px 350px at 20% 15%, color-mix(in srgb, var(--accent) 14%, transparent), transparent 70%),
+    radial-gradient(600px 350px at 85% 30%, color-mix(in srgb, var(--accent-2) 14%, transparent), transparent 70%);
+}
