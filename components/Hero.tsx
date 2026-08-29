@@ -8,11 +8,12 @@ import SocialLinks from "./SocialLinks";
 export default function Hero() {
   return (
     <section id="top" className="hero-glow relative flex min-h-screen items-center">
-      <div className="mx-auto grid w-full max-w-6xl items-center gap-12 px-6 pb-12 pt-28 md:pb-0 md:pt-16 md:grid-cols-[1.4fr_1fr]">
+      <div className="mx-auto grid w-full max-w-6xl items-center gap-8 px-6 pb-12 pt-28 md:gap-12 md:pb-0 md:pt-16 md:grid-cols-[1.4fr_1fr]">
         <motion.div
           initial={{ opacity: 0, y: 28 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: [0.21, 0.47, 0.32, 0.98] }}
+          className="order-2 md:order-1"
         >
           <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
             Hi, I&apos;m <span className="text-gradient">{identity.name}</span>.
@@ -54,7 +55,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.92 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.15, ease: [0.21, 0.47, 0.32, 0.98] }}
-          className="mx-auto md:mx-0 md:justify-self-start"
+          className="order-1 mx-auto md:order-2 md:mx-0 md:justify-self-start"
         >
           <div className="relative">
             <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-accent to-accent-2 opacity-60 blur-lg" />
@@ -62,7 +63,7 @@ export default function Hero() {
             <img
               src={identity.headshot}
               alt={`Photo of ${identity.name}`}
-              className="relative h-64 w-64 rounded-full border border-edge object-cover sm:h-80 sm:w-80"
+              className="relative h-36 w-36 rounded-full border border-edge object-cover sm:h-80 sm:w-80"
             />
           </div>
         </motion.div>
