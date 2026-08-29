@@ -27,7 +27,7 @@ export const socials = {
 export const about = {
   paragraphs: [
     "I'm a Senior Software Engineer with 8+ years of experience building scalable Java enterprise solutions. Right now I'm at Oddball, building and maintaining backend services for MyHealtheVet, the VA's primary health portal serving millions of Veterans. Before that I spent seven years at The Hartford, working my way up from Junior Developer to Software Engineer on the Enterprise Risk Management team.",
-    "Outside of work I ship my own products, including Offrrd, an AI-powered job search assistant live on the App Store. I self-host a full home lab on Ubuntu Server and Raspberry Pis, and create content as nullpointerbro (160K+ likes on TikTok, 174K+ views on my top YouTube tutorial). I finished my M.S. in Computer Science at CCSU in Fall 2025.",
+    "Outside of work I ship my own products, including Offrrd, an AI-powered job search assistant live on the App Store. I self-host a full home lab on Ubuntu Server and Raspberry Pis, and create content as nullpointerbro (160K+ likes on TikTok, 174K+ views on my top YouTube tutorial). I finished my M.S. in Computer Information Technology, with a concentration in Computer Science, at CCSU in Fall 2025.",
   ],
   // Primary skills come straight from the resume's Technical Expertise section.
   skills: {
@@ -343,7 +343,7 @@ export const resume = {
   ] satisfies Company[],
   education: [
     {
-      credential: "M.S., Computer Information Tech - Computer Science",
+      credential: "M.S., Computer Information Technology (Computer Science concentration)",
       institution: "Central Connecticut State University",
       period: "Fall 2025",
     },

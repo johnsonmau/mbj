@@ -32,6 +32,12 @@ export default function Hero() {
               View my work
             </Link>
             <Link
+              href="/#resume"
+              className="rounded-full border border-edge bg-surface px-6 py-3 text-sm font-semibold transition hover:border-accent"
+            >
+              My experience
+            </Link>
+            <Link
               href="/#contact"
               className="rounded-full border border-edge bg-surface px-6 py-3 text-sm font-semibold transition hover:border-accent"
             >
