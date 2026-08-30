@@ -12,11 +12,19 @@ export default function Projects() {
           <Reveal key={project.slug} delay={i * 0.08}>
             <article className="glow-card group flex h-full flex-col rounded-2xl border border-edge bg-surface p-6">
               <div className="flex items-start justify-between">
-                <h3 className="text-lg font-semibold">
-                  <Link href={`/projects/${project.slug}`} className="transition group-hover:text-accent">
-                    {project.title}
-                  </Link>
-                </h3>
+                <div className="flex items-center gap-3">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={project.icon}
+                    alt={`${project.title} icon`}
+                    className="h-10 w-10 shrink-0 rounded-xl border border-edge object-cover"
+                  />
+                  <h3 className="text-lg font-semibold">
+                    <Link href={`/projects/${project.slug}`} className="transition group-hover:text-accent">
+                      {project.title}
+                    </Link>
+                  </h3>
+                </div>
                 <div className="flex gap-2 text-muted">
                   {(project.repo ?? project.repos?.[0]?.url) && (
                     <a

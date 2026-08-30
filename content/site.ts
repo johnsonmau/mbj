@@ -81,6 +81,7 @@ export const about = {
 
 export type Project = {
   slug: string;
+  icon: string;
   title: string;
   summary: string;
   description: string[];
@@ -95,6 +96,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     slug: "offrrd",
+    icon: "/projects/offrrd.png",
     title: "Offrrd",
     summary:
       "AI-powered job search assistant, live on the web and the iOS App Store. Find matching jobs, generate AI-tailored resumes and cover letters, and track every application.",
@@ -109,6 +111,7 @@ export const projects: Project[] = [
   },
   {
     slug: "monster-tag",
+    icon: "/projects/monster-tag.png",
     title: "Monster Tag",
     summary:
       "Kids' peek-a-scare timing game for ages 6-12: collect monsters, build loadouts, and pull off the perfect scare. React Native + Expo with a server-authoritative Spring Boot backend.",
@@ -121,6 +124,7 @@ export const projects: Project[] = [
   },
   {
     slug: "brainzzy",
+    icon: "/projects/brainzzy.png",
     title: "brainzzy.com",
     summary:
       "Cross-platform trivia game with a Flutter front-end, Spring Boot API, and MySQL, self-hosted end to end.",
@@ -137,6 +141,7 @@ export const projects: Project[] = [
   },
   {
     slug: "nullpointerbro",
+    icon: "/projects/nullpointerbro.png",
     title: "nullpointerbro.com",
     summary:
       "The home base for my content brand: tutorials, guides, home lab projects, tech reviews, and shop-my-setup.",
@@ -149,6 +154,7 @@ export const projects: Project[] = [
   },
   {
     slug: "vulnerability-dashboard",
+    icon: "/projects/vulnerability-dashboard.png",
     title: "Vulnerability Assessment Dashboard",
     summary:
       "M.S. capstone: a security analysis platform for CS education, integrating static analysis tools and scanners into one dashboard.",
@@ -161,6 +167,7 @@ export const projects: Project[] = [
   },
   {
     slug: "this-website",
+    icon: "/projects/this-website.png",
     title: "This Website",
     summary:
       "The site you're looking at: a modern developer portfolio built with Next.js, TypeScript, Tailwind CSS, and Framer Motion.",
@@ -174,6 +181,7 @@ export const projects: Project[] = [
   },
   {
     slug: "eazyweather",
+    icon: "/projects/eazyweather.png",
     title: "Eazyweather",
     summary:
       "Full-stack weather application built with Java, Spring Boot, Thymeleaf, Bootstrap, and jQuery.",

@@ -33,7 +33,15 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
           ← Back to projects
         </Link>
 
-        <h1 className="mt-6 text-4xl font-bold tracking-tight">{project.title}</h1>
+        <div className="mt-6 flex items-center gap-4">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={project.icon}
+            alt={`${project.title} icon`}
+            className="h-14 w-14 shrink-0 rounded-2xl border border-edge object-cover"
+          />
+          <h1 className="text-4xl font-bold tracking-tight">{project.title}</h1>
+        </div>
         <p className="mt-4 text-lg text-muted">{project.summary}</p>
 
         <div className="mt-6 flex flex-wrap gap-2">
