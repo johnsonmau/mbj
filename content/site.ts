@@ -203,17 +203,16 @@ export const homelab = {
   intro:
     "Six nodes, 50+ containerized services, and real production workloads: Offrrd's backend, the Monster Tag API, and nullpointerbro.com all serve the public from this rack. Everything is monitored in Grafana, and it's the subject of most of my content.",
   stats: [
-    { value: "6", label: "servers & Pis" },
+    { value: "6", label: "servers" },
     { value: "52", label: "services running" },
-    { value: "23ms", label: "avg response time" },
   ],
   hardware: [
-    { name: "ubuntu-server-public", detail: "Production node where my public-facing apps are hosted, behind Nginx and hardened with CrowdSec and Cloudflare Tunnel" },
-    { name: "ubuntu-server-home", detail: "Internal services: Home Assistant, Grafana, Jenkins, Gitea, and the smart home stack" },
-    { name: "ubuntu-media-server", detail: "Jellyfin media stack with the full *arr suite (Sonarr, Radarr, Prowlarr, Bazarr, Jellyseerr)" },
-    { name: "garage-pi", detail: "Relay-wired Raspberry Pi Zero exposing my garage door as a secure API" },
-    { name: "matrix-pi", detail: "Drives an RGB LED sports scoreboard via a custom Sportsmatrix UI" },
-    { name: "og-pi", detail: "The Pi that started it all: network utilities and monitoring agents" },
+    { name: "Public App Server", detail: "Production node where my public-facing apps are hosted, behind Nginx and hardened with CrowdSec and Cloudflare Tunnel" },
+    { name: "Home Server", detail: "Internal services: Home Assistant, Grafana, Jenkins, Gitea, and the smart home stack" },
+    { name: "Media Server", detail: "Jellyfin media stack with the full *arr suite (Sonarr, Radarr, Prowlarr, Bazarr, Jellyseerr)" },
+    { name: "Garage Pi", detail: "Relay-wired Raspberry Pi Zero exposing my garage door as a secure API" },
+    { name: "Scoreboard Pi", detail: "Drives an RGB LED sports scoreboard via a custom Sportsmatrix UI" },
+    { name: "OG Pi", detail: "The Pi that started it all: network utilities and monitoring agents" },
   ],
   serviceCategories: [
     { name: "Observability", items: ["Grafana", "Prometheus", "Uptime Kuma", "Beszel", "cAdvisor", "GoAccess", "Metabase"] },

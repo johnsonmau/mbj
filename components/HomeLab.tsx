@@ -10,7 +10,7 @@ export default function HomeLab() {
       </Reveal>
 
       <Reveal delay={0.08}>
-        <div className="mt-8 grid grid-cols-2 gap-4 lg:grid-cols-4">
+        <div className="mt-8 grid grid-cols-2 gap-4">
           {homelab.stats.map((stat) => (
             <div key={stat.label} className="glow-card rounded-2xl border border-edge bg-surface p-5 text-center">
               <p className="text-gradient text-3xl font-bold">{stat.value}</p>
