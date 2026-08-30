@@ -55,7 +55,7 @@ export default function Projects() {
                 href={`/projects/${project.slug}`}
                 className="mt-5 text-sm font-medium text-accent transition hover:opacity-80"
               >
-                Case study →
+                View details →
               </Link>
             </article>
           </Reveal>
