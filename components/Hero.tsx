@@ -25,7 +25,7 @@ export default function Hero() {
             {identity.tagline}
           </p>
 
-          <div className="mt-8 flex items-center gap-2 sm:gap-4">
+          <div className="mt-8 flex items-center justify-center gap-2 sm:gap-4 md:justify-start">
             <Link
               href="/#projects"
               className="whitespace-nowrap rounded-full bg-foreground px-3.5 py-3 text-xs font-semibold text-background transition hover:opacity-85 sm:px-6 sm:text-sm"
@@ -46,7 +46,7 @@ export default function Hero() {
             </Link>
           </div>
 
-          <div className="mt-10">
+          <div className="mt-10 flex justify-center md:justify-start">
             <SocialLinks size="lg" />
           </div>
         </motion.div>
