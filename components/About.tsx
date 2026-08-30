@@ -38,23 +38,6 @@ export default function About() {
               </div>
             </div>
           ))}
-          <h3 className="mt-8 font-mono text-sm uppercase tracking-widest text-muted">
-            Some experience with
-          </h3>
-          <div className="mt-4 flex flex-wrap gap-2">
-            {about.skills.secondary.map((skill) => (
-              <span
-                key={skill.name}
-                className="inline-flex items-center gap-1.5 rounded-full border border-edge/60 bg-surface px-3 py-1.5 font-mono text-xs text-muted transition hover:border-accent hover:text-foreground"
-              >
-                {skill.icon && (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img src={skill.icon} alt="" className="h-3.5 w-3.5" />
-                )}
-                {skill.name}
-              </span>
-            ))}
-          </div>
         </Reveal>
       </div>
     </Section>

@@ -89,20 +89,6 @@ export const about = {
         ],
       },
     ],
-    // Picked up through my own products and home lab.
-    secondary: [
-      { name: "Flutter", icon: "/tech/flutter.svg" },
-      { name: "Flyway", icon: "/tech/flyway.svg" },
-      { name: "Stripe", icon: "/tech/stripe.svg" },
-      { name: "RevenueCat", icon: "/tech/revenuecat.svg" },
-      { name: "Claude API", icon: "/tech/claude.svg" },
-      { name: "Claude Code", icon: "/tech/claude-code.svg" },
-      { name: "GitHub Copilot", icon: "/tech/github-copilot.svg" },
-      { name: "Cloudflare R2 + Tunnel", icon: "/tech/cloudflare.svg" },
-      { name: "Windows", icon: "/tech/windows.svg" },
-      { name: "macOS", icon: "/tech/macos.svg" },
-      { name: "Raspberry Pi OS", icon: "/tech/raspberry-pi.svg" },
-    ],
   },
 };
 
