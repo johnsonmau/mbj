@@ -20,10 +20,14 @@ export default function About() {
           <div className="mt-4 flex flex-wrap gap-2">
             {about.skills.primary.map((skill) => (
               <span
-                key={skill}
-                className="rounded-full border border-edge bg-surface px-3 py-1.5 font-mono text-xs text-foreground/80 transition hover:border-accent hover:text-foreground"
+                key={skill.name}
+                className="inline-flex items-center gap-1.5 rounded-full border border-edge bg-surface px-3 py-1.5 font-mono text-xs text-foreground/80 transition hover:border-accent hover:text-foreground"
               >
-                {skill}
+                {skill.icon && (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={skill.icon} alt="" className="h-3.5 w-3.5" />
+                )}
+                {skill.name}
               </span>
             ))}
           </div>
@@ -33,10 +37,14 @@ export default function About() {
           <div className="mt-4 flex flex-wrap gap-2">
             {about.skills.secondary.map((skill) => (
               <span
-                key={skill}
-                className="rounded-full border border-edge/60 bg-surface px-3 py-1.5 font-mono text-xs text-muted transition hover:border-accent hover:text-foreground"
+                key={skill.name}
+                className="inline-flex items-center gap-1.5 rounded-full border border-edge/60 bg-surface px-3 py-1.5 font-mono text-xs text-muted transition hover:border-accent hover:text-foreground"
               >
-                {skill}
+                {skill.icon && (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={skill.icon} alt="" className="h-3.5 w-3.5" />
+                )}
+                {skill.name}
               </span>
             ))}
           </div>
