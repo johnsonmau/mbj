@@ -168,7 +168,7 @@ export const projects: Project[] = [
   {
     slug: "this-website",
     icon: "/projects/this-website.png",
-    title: "This Website",
+    title: "mbjohnsonjr.com",
     summary:
       "The site you're looking at: a modern developer portfolio built with Next.js, TypeScript, Tailwind CSS, and Framer Motion.",
     description: [
