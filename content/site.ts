@@ -110,6 +110,20 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    slug: "this-website",
+    icon: "/projects/this-website.png",
+    title: "mbjohnsonjr.com",
+    summary:
+      "The site you're looking at: a modern developer portfolio built with Next.js, TypeScript, Tailwind CSS, and Framer Motion.",
+    description: [
+      "A fully static portfolio built on Next.js 16 (App Router) with TypeScript, Tailwind CSS v4, and Framer Motion for scroll animations. Dark theme by default with a persisted light-mode toggle.",
+      "All content lives in a single typed data file, so projects, roles, and stats update without touching a component. Project pages are statically generated from that same data.",
+    ],
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    repo: "https://github.com/johnsonmau/mbj",
+    featured: false,
+  },
+  {
     slug: "monster-tag",
     icon: "/projects/monster-tag.png",
     title: "Monster Tag",
@@ -120,23 +134,6 @@ export const projects: Project[] = [
       "Fully playable offline as a guest; signing in makes the server authoritative. The backend is Java 21 / Spring Boot 3.3 with PostgreSQL, Redis, Flyway, and JWT. The frontend is React Native + Expo with Zustand, React Query, and RevenueCat for in-app purchases.",
     ],
     stack: ["React Native", "Expo", "TypeScript", "Java 21", "Spring Boot", "PostgreSQL", "Redis"],
-    featured: true,
-  },
-  {
-    slug: "brainzzy",
-    icon: "/projects/brainzzy.png",
-    title: "brainzzy.com",
-    summary:
-      "Cross-platform trivia game with a Flutter front-end, Spring Boot API, and MySQL, self-hosted end to end.",
-    description: [
-      "A trivia game with a Flutter front-end and a Java Spring Boot back-end, backed by MySQL and self-hosted on my Ubuntu server.",
-      "It integrates modern frameworks and database management to deliver an engaging, cross-platform user experience: one codebase for web and mobile on the front, a clean REST API behind it.",
-    ],
-    stack: ["Flutter", "Java", "Spring Boot", "MySQL"],
-    repos: [
-      { label: "Front-end", url: "https://github.com/johnsonmau/trivia-ui" },
-      { label: "Back-end", url: "https://github.com/johnsonmau/trivia-api" },
-    ],
     featured: true,
   },
   {
@@ -166,18 +163,21 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    slug: "this-website",
-    icon: "/projects/this-website.png",
-    title: "mbjohnsonjr.com",
+    slug: "brainzzy",
+    icon: "/projects/brainzzy.png",
+    title: "brainzzy.com",
     summary:
-      "The site you're looking at: a modern developer portfolio built with Next.js, TypeScript, Tailwind CSS, and Framer Motion.",
+      "Cross-platform trivia game with a Flutter front-end, Spring Boot API, and MySQL, self-hosted end to end.",
     description: [
-      "A fully static portfolio built on Next.js 16 (App Router) with TypeScript, Tailwind CSS v4, and Framer Motion for scroll animations. Dark theme by default with a persisted light-mode toggle.",
-      "All content lives in a single typed data file, so projects, roles, and stats update without touching a component. Project pages are statically generated from that same data.",
+      "A trivia game with a Flutter front-end and a Java Spring Boot back-end, backed by MySQL and self-hosted on my Ubuntu server.",
+      "It integrates modern frameworks and database management to deliver an engaging, cross-platform user experience: one codebase for web and mobile on the front, a clean REST API behind it.",
     ],
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    repo: "https://github.com/johnsonmau/mbj",
-    featured: false,
+    stack: ["Flutter", "Java", "Spring Boot", "MySQL"],
+    repos: [
+      { label: "Front-end", url: "https://github.com/johnsonmau/trivia-ui" },
+      { label: "Back-end", url: "https://github.com/johnsonmau/trivia-api" },
+    ],
+    featured: true,
   },
   {
     slug: "eazyweather",
