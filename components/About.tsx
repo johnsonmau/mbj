@@ -17,20 +17,27 @@ export default function About() {
           <h3 className="font-mono text-sm uppercase tracking-widest text-muted">
             Tech I work with
           </h3>
-          <div className="mt-4 flex flex-wrap gap-2">
-            {about.skills.primary.map((skill) => (
-              <span
-                key={skill.name}
-                className="inline-flex items-center gap-1.5 rounded-full border border-edge bg-surface px-3 py-1.5 font-mono text-xs text-foreground/80 transition hover:border-accent hover:text-foreground"
-              >
-                {skill.icon && (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img src={skill.icon} alt="" className="h-3.5 w-3.5" />
-                )}
-                {skill.name}
-              </span>
-            ))}
-          </div>
+          {about.skills.groups.map((group) => (
+            <div key={group.name} className="mt-5">
+              <h4 className="text-xs font-semibold uppercase tracking-wide text-muted/80">
+                {group.name}
+              </h4>
+              <div className="mt-2 flex flex-wrap gap-2">
+                {group.items.map((skill) => (
+                  <span
+                    key={skill.name}
+                    className="inline-flex items-center gap-1.5 rounded-full border border-edge bg-surface px-3 py-1.5 font-mono text-xs text-foreground/80 transition hover:border-accent hover:text-foreground"
+                  >
+                    {skill.icon && (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img src={skill.icon} alt="" className="h-3.5 w-3.5" />
+                    )}
+                    {skill.name}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
           <h3 className="mt-8 font-mono text-sm uppercase tracking-widest text-muted">
             Some experience with
           </h3>
