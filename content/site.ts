@@ -58,7 +58,7 @@ export const about = {
       { name: "Nginx", icon: "/tech/nginx.svg" },
       { name: "Grafana", icon: "/tech/grafana.svg" },
       { name: "Selenium", icon: "/tech/selenium.svg" },
-      { name: "Karate" },
+      { name: "Karate", icon: "/tech/karate.svg" },
       { name: "Ubuntu Server", icon: "/tech/ubuntu.svg" },
       { name: "Raspberry Pi OS", icon: "/tech/raspberry-pi.svg" },
       { name: "Windows", icon: "/tech/windows.svg" },
