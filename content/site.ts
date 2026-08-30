@@ -348,11 +348,13 @@ export const resume = {
       credential: "M.S., Computer Information Technology (Computer Science concentration)",
       institution: "Central Connecticut State University",
       period: "Fall 2025",
+      logo: "/logos/ccsu.png",
     },
     {
       credential: "B.S., Computer Science",
       institution: "Eastern Connecticut State University",
       period: "Fall 2017",
+      logo: "/logos/ecsu.png",
     },
   ],
 };

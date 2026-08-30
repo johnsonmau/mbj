@@ -71,10 +71,18 @@ export default function ResumeSection() {
           <div className="mt-6 space-y-4">
             {resume.education.map((entry, i) => (
               <Reveal key={i} delay={0.1 + i * 0.08}>
-                <div className="glow-card rounded-2xl border border-edge bg-surface p-5">
-                  <p className="font-mono text-xs text-muted">{entry.period}</p>
-                  <p className="mt-1 font-semibold">{entry.credential}</p>
-                  <p className="text-sm text-muted">{entry.institution}</p>
+                <div className="glow-card flex items-start gap-4 rounded-2xl border border-edge bg-surface p-5">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={entry.logo}
+                    alt={`${entry.institution} logo`}
+                    className="h-11 w-11 shrink-0 rounded-xl border border-edge bg-white object-contain p-1.5"
+                  />
+                  <div>
+                    <p className="font-mono text-xs text-muted">{entry.period}</p>
+                    <p className="mt-1 font-semibold">{entry.credential}</p>
+                    <p className="text-sm text-muted">{entry.institution}</p>
+                  </div>
                 </div>
               </Reveal>
             ))}
