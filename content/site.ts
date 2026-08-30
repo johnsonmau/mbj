@@ -207,12 +207,12 @@ export const homelab = {
     { value: "52", label: "services running" },
   ],
   hardware: [
-    { name: "Public App Server", detail: "Production node where my public-facing apps are hosted, behind Nginx and hardened with CrowdSec and Cloudflare Tunnel" },
-    { name: "Home Server", detail: "Internal services: Home Assistant, Grafana, Jenkins, Gitea, and the smart home stack" },
-    { name: "Media Server", detail: "Jellyfin media stack with the full *arr suite (Sonarr, Radarr, Prowlarr, Bazarr, Jellyseerr)" },
-    { name: "Garage Pi", detail: "Relay-wired Raspberry Pi Zero exposing my garage door as a secure API" },
-    { name: "Scoreboard Pi", detail: "Drives an RGB LED sports scoreboard via a custom Sportsmatrix UI" },
-    { name: "OG Pi", detail: "The Pi that started it all: network utilities and monitoring agents" },
+    { name: "Public App Server", detail: "Ubuntu Server. Production node where my public-facing apps are hosted, behind Nginx and hardened with CrowdSec and Cloudflare Tunnel" },
+    { name: "Home Server", detail: "Ubuntu Server. Internal services: Home Assistant, Grafana, Jenkins, Gitea, and the smart home stack" },
+    { name: "Media Server", detail: "Ubuntu Server. Jellyfin media stack with the full *arr suite (Sonarr, Radarr, Prowlarr, Bazarr, Jellyseerr)" },
+    { name: "Garage Pi", detail: "Raspberry Pi OS. Relay-wired Raspberry Pi Zero exposing my garage door as a secure API" },
+    { name: "Scoreboard Pi", detail: "Raspberry Pi OS. Raspberry Pi 4B driving an RGB LED sports scoreboard via a custom Sportsmatrix UI" },
+    { name: "OG Pi", detail: "Raspberry Pi OS. The Pi that started it all: network utilities and monitoring agents" },
   ],
   serviceCategories: [
     { name: "Observability", items: ["Grafana", "Prometheus", "Uptime Kuma", "Beszel", "cAdvisor", "GoAccess", "Metabase"] },
