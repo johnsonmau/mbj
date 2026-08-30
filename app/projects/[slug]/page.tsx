@@ -53,6 +53,14 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
         </div>
 
         <div className="mt-6 flex flex-wrap gap-3">
+          {project.privateRepo && (
+            <span
+              title="Source code is in a private repository"
+              className="inline-flex items-center gap-2 rounded-full border border-edge bg-surface px-4 py-2 text-sm font-medium text-muted"
+            >
+              <GitHubIcon className="h-4 w-4" /> Private repo
+            </span>
+          )}
           {project.repo && (
             <a
               href={project.repo}

@@ -105,12 +105,14 @@ export type Project = {
   repos?: { label: string; url: string }[];
   live?: string;
   appStore?: string;
+  privateRepo?: boolean;
   featured: boolean;
 };
 
 export const projects: Project[] = [
   {
     slug: "offrrd",
+    privateRepo: true,
     icon: "/projects/offrrd.png",
     title: "Offrrd",
     summary:
@@ -140,6 +142,7 @@ export const projects: Project[] = [
   },
   {
     slug: "monster-tag",
+    privateRepo: true,
     icon: "/projects/monster-tag.png",
     title: "Monster Tag",
     summary:
@@ -153,6 +156,7 @@ export const projects: Project[] = [
   },
   {
     slug: "nullpointerbro",
+    privateRepo: true,
     icon: "/projects/nullpointerbro.png",
     title: "nullpointerbro.com",
     summary:
@@ -166,6 +170,7 @@ export const projects: Project[] = [
   },
   {
     slug: "vulnerability-dashboard",
+    privateRepo: true,
     icon: "/projects/vulnerability-dashboard.png",
     title: "Vulnerability Assessment Dashboard",
     summary:

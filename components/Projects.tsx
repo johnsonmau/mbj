@@ -25,7 +25,15 @@ export default function Projects() {
                     </Link>
                   </h3>
                 </div>
-                <div className="flex gap-2 text-muted">
+                <div className="flex items-center gap-2 text-muted">
+                  {project.privateRepo && (
+                    <span
+                      title="Source code is in a private repository"
+                      className="inline-flex items-center gap-1 font-mono text-[10px] uppercase tracking-wide"
+                    >
+                      <GitHubIcon className="h-4 w-4" /> Private
+                    </span>
+                  )}
                   {(project.repo ?? project.repos?.[0]?.url) && (
                     <a
                       href={project.repo ?? project.repos![0].url}
