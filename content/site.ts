@@ -160,7 +160,7 @@ export const projects: Project[] = [
     icon: "/projects/nullpointerbro.png",
     title: "Nullpointerbro",
     summary:
-      "The home base for my content brand, rebuilt from scratch as a full-stack app: home lab guides, an affiliate gear shop with click attribution, and a small community, self-hosted end to end.",
+      "The home base for my content brand, rebuilt from scratch as a full-stack app: home lab guides, an affiliate gear shop, and a small community, self-hosted end to end.",
     description: [
       "A complete rewrite of the original nullpointerbro.com. Guides are written in a Tiptap rich-text admin studio, stored as structured JSON, and rendered server-side with code highlighting, per-post view counts, and auto-generated social preview images. The gear shop routes every product link through a click-logging redirect, so affiliate performance is measurable per product, and admin dashboards surface clicks, views, and comments to moderate.",
       "Community members sign in with Google, GitHub, or Discord, or classic username/password with one-time recovery codes, and can leave comments with replies and emoji reactions. The backend is Java 21 / Spring Boot 4 with PostgreSQL and Flyway; the frontend is Next.js 16 with TypeScript and Tailwind CSS. The whole stack, Caddy, backend, frontend, Postgres, and Umami analytics, ships as one Docker Compose deploy on my home lab.",
