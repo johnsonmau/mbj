@@ -127,6 +127,20 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    slug: "rally",
+    privateRepo: true,
+    icon: "/projects/rally.png",
+    title: "Rally",
+    summary:
+      "Group fitness challenges powered by Apple HealthKit and Health Connect, currently in development. Goals are personalized to each member's body metrics and every day caps at 1,000 points, so everyone competes on effort, not fitness level.",
+    description: [
+      "Rally scores your day out of 1,000 points against goals computed from your own body metrics, so a beginner and a marathoner can share a leaderboard and both have a real shot. Health data is read on-device from HealthKit or Health Connect and uploaded as daily aggregates only; the server owns the scoring, snapshots goals when a challenge starts, and locks days 48 hours after midnight. Around that core: leaderboards, streaks, trophies, a challenge feed, and push notifications, all anchored by a signature four-segment activity ring.",
+      "The backend is Java 21 / Spring Boot 3.5 with PostgreSQL (Flyway-managed), Redis caching, and an exhaustively tested scoring engine that shipped before any UI touched it. The mobile app is React Native + Expo with Skia-drawn rings, Reanimated, native HealthKit and Health Connect providers, and a custom Expo module wrapping Apple's HKActivityRingView so your real Apple Watch rings show up in-app.",
+    ],
+    stack: ["Java 21", "Spring Boot", "PostgreSQL", "Redis", "React Native", "Expo", "HealthKit", "Health Connect"],
+    featured: true,
+  },
+  {
     slug: "this-website",
     icon: "/projects/this-website.png",
     title: "mbjohnsonjr.com",
