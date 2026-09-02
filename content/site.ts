@@ -132,7 +132,7 @@ export const projects: Project[] = [
     icon: "/projects/rally.png",
     title: "Rally",
     summary:
-      "Group fitness challenges powered by Apple HealthKit and Health Connect, currently in development. Goals are personalized to each member's body metrics and every day caps at 1,000 points, so everyone competes on effort, not fitness level.",
+      "Group fitness challenges powered by Apple HealthKit and Health Connect. Goals are personalized to each member's body metrics and every day caps at 1,000 points, so everyone competes on effort, not fitness level.",
     description: [
       "Rally scores your day out of 1,000 points against goals computed from your own body metrics, so a beginner and a marathoner can share a leaderboard and both have a real shot. Health data is read on-device from HealthKit or Health Connect and uploaded as daily aggregates only; the server owns the scoring, snapshots goals when a challenge starts, and locks days 48 hours after midnight. Around that core: leaderboards, streaks, trophies, a challenge feed, and push notifications, all anchored by a signature four-segment activity ring.",
       "The backend is Java 21 / Spring Boot 3.5 with PostgreSQL (Flyway-managed), Redis caching, and an exhaustively tested scoring engine that shipped before any UI touched it. The mobile app is React Native + Expo with Skia-drawn rings, Reanimated, native HealthKit and Health Connect providers, and a custom Expo module wrapping Apple's HKActivityRingView so your real Apple Watch rings show up in-app.",
@@ -143,7 +143,7 @@ export const projects: Project[] = [
   {
     slug: "this-website",
     icon: "/projects/this-website.png",
-    title: "mbjohnsonjr.com",
+    title: "mbjohnsonjr",
     summary:
       "The site you're looking at: a modern developer portfolio built with Next.js, TypeScript, Tailwind CSS, and Framer Motion.",
     description: [
@@ -153,6 +153,21 @@ export const projects: Project[] = [
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     repo: "https://github.com/johnsonmau/mbj",
     featured: false,
+  },
+  {
+    slug: "nullpointerbro",
+    privateRepo: true,
+    icon: "/projects/nullpointerbro.png",
+    title: "Nullpointerbro",
+    summary:
+      "The home base for my content brand, rebuilt from scratch as a full-stack app: home lab guides, an affiliate gear shop with click attribution, and a small community, self-hosted end to end.",
+    description: [
+      "A complete rewrite of the original nullpointerbro.com. Guides are written in a Tiptap rich-text admin studio, stored as structured JSON, and rendered server-side with code highlighting, per-post view counts, and auto-generated social preview images. The gear shop routes every product link through a click-logging redirect, so affiliate performance is measurable per product, and admin dashboards surface clicks, views, and comments to moderate.",
+      "Community members sign in with Google, GitHub, or Discord, or classic username/password with one-time recovery codes, and can leave comments with replies and emoji reactions. The backend is Java 21 / Spring Boot 4 with PostgreSQL and Flyway; the frontend is Next.js 16 with TypeScript and Tailwind CSS. The whole stack, Caddy, backend, frontend, Postgres, and Umami analytics, ships as one Docker Compose deploy on my home lab.",
+    ],
+    stack: ["Java 21", "Spring Boot 4", "Next.js", "TypeScript", "PostgreSQL", "Tailwind CSS", "Docker", "Self-hosted"],
+    live: "https://nullpointerbro.com",
+    featured: true,
   },
   {
     slug: "monster-tag",
@@ -169,17 +184,20 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    slug: "nullpointerbro",
-    privateRepo: true,
-    icon: "/projects/nullpointerbro.png",
-    title: "nullpointerbro.com",
+    slug: "brainzzy",
+    icon: "/projects/brainzzy.png",
+    title: "Brainzzy",
     summary:
-      "The home base for my content brand: tutorials, guides, home lab projects, tech reviews, and shop-my-setup.",
+      "Cross-platform trivia game with a Flutter front-end, Spring Boot API, and MySQL, self-hosted end to end.",
     description: [
-      "The companion site for my TikTok and YouTube presence as nullpointerbro. Tutorials, guides, home lab project write-ups, and tech reviews, plus affiliate links to the gear in my setup.",
+      "A trivia game with a Flutter front-end and a Java Spring Boot back-end, backed by MySQL and self-hosted on my Ubuntu server.",
+      "It integrates modern frameworks and database management to deliver an engaging, cross-platform user experience: one codebase for web and mobile on the front, a clean REST API behind it.",
     ],
-    stack: ["HTML", "CSS", "JavaScript", "Self-hosted"],
-    live: "https://nullpointerbro.com",
+    stack: ["Flutter", "Java", "Spring Boot", "MySQL"],
+    repos: [
+      { label: "Front-end", url: "https://github.com/johnsonmau/trivia-ui" },
+      { label: "Back-end", url: "https://github.com/johnsonmau/trivia-api" },
+    ],
     featured: true,
   },
   {
@@ -195,23 +213,6 @@ export const projects: Project[] = [
     ],
     stack: ["Java", "Docker", "Static Analysis", "GitHub API"],
     featured: false,
-  },
-  {
-    slug: "brainzzy",
-    icon: "/projects/brainzzy.png",
-    title: "brainzzy.com",
-    summary:
-      "Cross-platform trivia game with a Flutter front-end, Spring Boot API, and MySQL, self-hosted end to end.",
-    description: [
-      "A trivia game with a Flutter front-end and a Java Spring Boot back-end, backed by MySQL and self-hosted on my Ubuntu server.",
-      "It integrates modern frameworks and database management to deliver an engaging, cross-platform user experience: one codebase for web and mobile on the front, a clean REST API behind it.",
-    ],
-    stack: ["Flutter", "Java", "Spring Boot", "MySQL"],
-    repos: [
-      { label: "Front-end", url: "https://github.com/johnsonmau/trivia-ui" },
-      { label: "Back-end", url: "https://github.com/johnsonmau/trivia-api" },
-    ],
-    featured: true,
   },
   {
     slug: "eazyweather",
