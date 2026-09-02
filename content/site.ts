@@ -11,7 +11,7 @@ export const identity = {
   tagline:
     "8+ years building scalable Java & Spring Boot systems, currently supporting a health portal used by millions of Veterans. I ship my own products, run a home lab, and make content about all of it.",
   location: "Connecticut, USA",
-  email: "maurice.johnson9911@gmail.com",
+  email: "mj@mbjohnsonjr.com",
   phone: "203-873-8099",
   headshot: "/headshot.jpg",
 };
