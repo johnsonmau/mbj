@@ -127,6 +127,21 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    slug: "bugged",
+    privateRepo: true,
+    icon: "/projects/bugged.png",
+    title: "Bugged",
+    summary:
+      "A debugging gym for developers. One free \"spot the bug\" puzzle every day with a shareable result grid, plus a paid gym of tracks and real broken boxes you fix in a live sandbox.",
+    description: [
+      "Interview prep trains algorithms; the job is debugging. Bugged trains debugging. The free daily puzzle is a snippet or config with exactly one bug, a timer, three guesses, and a Wordle-style share grid. Pro unlocks the archive, tracks by language and bug class, and sandbox puzzles where the challenge is a real broken box you SSH into and fix. Teams buy seats for onboarding and per-candidate hiring screens that record how someone investigates, not just whether they found it.",
+      "The API is Java 21 / Spring Boot 3.5 with PostgreSQL (Flyway-managed), Redis, and JWT auth via Google, GitHub, and email. Answers are verified server-side and never shipped to the client. Sandbox puzzles run in Docker containers started by a Spring Boot runner, with hosts joined over Tailscale, one on the VPS and one on my home lab. The app is React Native + Expo shipping iOS and web from one codebase, served at the edge by a Cloudflare Worker, with Stripe for billing and Remotion generating the share cards and vertical clips for the channel.",
+    ],
+    stack: ["Java 21", "Spring Boot", "PostgreSQL", "Redis", "React Native", "Expo", "Docker", "Cloudflare Workers", "Stripe"],
+    live: "https://bugged.dev",
+    featured: true,
+  },
+  {
     slug: "rally",
     privateRepo: true,
     icon: "/projects/rally.png",
@@ -250,7 +265,7 @@ export const homelab = {
     { name: "DevOps", items: ["Jenkins", "Gitea", "Nexus", "Portainer", "Code-server"] },
     { name: "Smart Home", items: ["Home Assistant", "Zigbee2MQTT", "Z-Wave JS UI", "MQTT Explorer", "go2rtc"] },
     { name: "Media & Files", items: ["Jellyfin", "Sonarr", "Radarr", "Prowlarr", "Jellyseerr", "Nextcloud"] },
-    { name: "AI & Production Apps", items: ["Open WebUI", "Offrrd API + Postgres + Redis", "Monster Tag API", "nullpointerbro.com"] },
+    { name: "AI & Production Apps", items: ["Open WebUI", "Offrrd API + Postgres + Redis", "Monster Tag API", "nullpointerbro.com", "Bugged sandbox runner"] },
   ],
   lessons: [
     "Running real production apps from my own rack. DNS, SSL, reverse proxying, intrusion prevention (CrowdSec), and uptime are my problem, and I like it that way.",
