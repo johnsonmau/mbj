@@ -27,7 +27,7 @@ export const socials = {
 export const about = {
   paragraphs: [
     "I'm a Senior Software Engineer with 8+ years of experience building scalable Java enterprise solutions. Right now I'm at Oddball, building and maintaining backend services for MyHealtheVet, the VA's primary health portal serving millions of Veterans. Before that I spent seven years at The Hartford, working my way up from Junior Developer to Software Engineer on the Enterprise Risk Management team.",
-    "Outside of work I ship my own products, including Offrrd, an AI-powered job search assistant live on the App Store. I self-host a full home lab on Ubuntu Server and Raspberry Pis, and create content as nullpointerbro (160K+ likes on TikTok, 174K+ views on my top YouTube tutorial). I finished my M.S. in Computer Information Technology, with a concentration in Computer Science, at CCSU in Fall 2025.",
+    "Outside of work I ship my own products, including Offrrd, an AI-powered job search assistant, and Rally, a group fitness challenge app, both live on the App Store. I self-host a full home lab on Ubuntu Server and Raspberry Pis, and create content as nullpointerbro (160K+ likes on TikTok, 174K+ views on my top YouTube tutorial). I finished my M.S. in Computer Information Technology, with a concentration in Computer Science, at CCSU in Fall 2025.",
   ],
   // Skill groups mirror the resume's Technical Skills section.
   skills: {
@@ -147,12 +147,14 @@ export const projects: Project[] = [
     icon: "/projects/rally.png",
     title: "Rally",
     summary:
-      "Group fitness challenges powered by Apple HealthKit and Health Connect. Goals are personalized to each member's body metrics and every day caps at 1,000 points, so everyone competes on effort, not fitness level.",
+      "Group fitness challenges powered by Apple HealthKit and Health Connect, live on the iOS App Store. Goals are personalized to each member's body metrics and every day caps at 1,000 points, so everyone competes on effort, not fitness level.",
     description: [
       "Rally scores your day out of 1,000 points against goals computed from your own body metrics, so a beginner and a marathoner can share a leaderboard and both have a real shot. Health data is read on-device from HealthKit or Health Connect and uploaded as daily aggregates only; the server owns the scoring, snapshots goals when a challenge starts, and locks days 48 hours after midnight. Around that core: leaderboards, streaks, trophies, a challenge feed, and push notifications, all anchored by a signature four-segment activity ring.",
       "The backend is Java 21 / Spring Boot 3.5 with PostgreSQL (Flyway-managed), Redis caching, and an exhaustively tested scoring engine that shipped before any UI touched it. The mobile app is React Native + Expo with Skia-drawn rings, Reanimated, native HealthKit and Health Connect providers, and a custom Expo module wrapping Apple's HKActivityRingView so your real Apple Watch rings show up in-app.",
     ],
     stack: ["Java 21", "Spring Boot", "PostgreSQL", "Redis", "React Native", "Expo", "HealthKit", "Health Connect"],
+    live: "https://rallyfitnesschallenges.com",
+    appStore: "https://apps.apple.com/us/app/rally-fitness-challenges/id6807479173",
     featured: true,
   },
   {
