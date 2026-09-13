@@ -1,5 +1,7 @@
 # mauricejohnson — Portfolio
 
+![mbjohnsonjr.com home page](docs/screenshot.png)
+
 Personal portfolio site for Maurice Johnson, Senior Software Engineer.
 
 A single-page, dark-themed portfolio covering who I am, where I've worked, the products I've shipped (including [Offrrd](https://offrrd.com) and [nullpointerbro.com](https://nullpointerbro.com)), the home lab that powers my self-hosted infrastructure, and the content I create as [@nullpointerbro](https://www.tiktok.com/@nullpointerbro).
